@@ -1,9 +1,11 @@
+import { user, host, database, password } from '../../vars';
+
 const Pool = require("pg").Pool;
 const pool = new Pool({
-  user: 'admin',
-  host: 'localhost',
-  database: 'hmvr',
-  password: 'Callie0228!',
+  user: user,
+  host: host,
+  database: database,
+  password: password,
   port: 5432,
 });
 
